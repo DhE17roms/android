@@ -6,7 +6,7 @@
            review="https://android-review.googlesource.com/" />
            
   <remote  name="github"
-           fetch="https://github.com/DhE17roms/" />
+           fetch="git://github.com/DhE17roms/" />
            
   <default revision="refs/tags/android-4.2.1_r1"
            remote="aosp"
@@ -40,7 +40,7 @@
   <project path="device/samsung/maguro" name="device/samsung/maguro" groups="device" />
   <project path="device/samsung/manta" name="device/samsung/manta" groups="device" />
   <project path="device/samsung/toro" name="device/samsung/toro" groups="device" />
-  <project path="device/samsung/toroplus" name="device/samsung/toroplus" groups="device" />
+  <project path="device/samsung/toroplus" name="devices_samsung_toroplus" remote="github" revision="master" />
   <project path="device/samsung/tuna" name="device/samsung/tuna" groups="device" />
   <project path="device/ti/panda" name="device/ti/panda" groups="device" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" />
@@ -202,7 +202,7 @@
   <project path="external/zlib" name="platform/external/zlib" />
   <project path="external/zxing" name="platform/external/zxing" />
   <project path="frameworks/av" name="platform/frameworks/av" />
-  <project path="frameworks/base" name="platform/frameworks/base" />
+  <project path="frameworks/base" name="android_frameworks" remote="github" revision="master" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" />
   <project path="frameworks/compile/linkloader" name="platform/frameworks/compile/linkloader" />
   <project path="frameworks/compile/llvm-ndk-cc" name="platform/frameworks/compile/llvm-ndk-cc" />
@@ -211,7 +211,7 @@
   <project path="frameworks/ex" name="platform/frameworks/ex" />
   <project path="frameworks/mff" name="platform/frameworks/mff" />
   <project path="frameworks/ml" name="platform/frameworks/ml" />
-  <project path="frameworks/native" name="platform/frameworks/native" />
+  <project path="frameworks/native" name="android_frameworks_native" remote="github" revision="master" />
   <project path="frameworks/opt/calendar" name="platform/frameworks/opt/calendar" />
   <project path="frameworks/opt/carddav" name="platform/frameworks/opt/carddav" />
   <project path="frameworks/opt/emoji" name="platform/frameworks/opt/emoji" />
@@ -278,7 +278,7 @@
   <project path="packages/apps/Protips" name="platform/packages/apps/Protips" />
   <project path="packages/apps/Provision" name="platform/packages/apps/Provision" />
   <project path="packages/apps/QuickSearchBox" name="platform/packages/apps/QuickSearchBox" />
-  <project path="packages/apps/Settings" name="platform/packages/apps/Settings" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="github" revision="master" />
   <project path="packages/apps/SmartCardService" name="platform/packages/apps/SmartCardService" />
   <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" />
   <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" />
@@ -345,5 +345,7 @@
   <project path="system/vold" name="platform/system/vold" />
   <project path="tools/build" name="platform/tools/build" groups="toolsbuild" />
   <project path="tools/motodev" name="platform/tools/motodev" />
+  <project path="vendor/samsung" name="android_vendor_samsung" remote="github" revision="master" />
+  <project path="vendor/warped" name="proprietary_vendor_warped" remote="github" revision="master" />
 
 </manifest>
