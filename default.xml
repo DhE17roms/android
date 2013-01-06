@@ -45,7 +45,7 @@
   <project path="device/samsung/manta" name="device/samsung/manta" groups="device" />
   <project path="device/samsung/toro" name="android_device_samsung_toro" remote="github" revision="master" />
   <project path="device/samsung/toroplus" name="devices_samsung_toroplus" remote="github" revision="master" />
-  <project path="device/samsung/tuna" name="device/samsung/tuna" groups="device" />
+  <project path="device/samsung/tuna" name="android_device_samsung_tuna" remote="github" revision="master" />
   <project path="device/ti/panda" name="device/ti/panda" groups="device" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" />
   <project path="external/aac" name="platform/external/aac" />
